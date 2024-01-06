@@ -14,3 +14,10 @@ and events. In this tutorial, we will focus on the cheatcode `vm.expectEmit` to 
 ## Get started
 
 The repo, github.com/hedera-dev/test-an-event-with-foundry, is intended to be used alongside this [tutorial](docs.hedera.com).
+
+> [!IMPORTANT]  
+> This project has submodules. You  must initialize the submodule configuration file and fetch all submodule data from the project. To do this run the following command:
+
+```shell
+git clone --recurse-submodules git@github.com:hedera-dev/test-an-event-with-foundry.git
+```
