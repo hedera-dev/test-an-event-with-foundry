@@ -6,7 +6,7 @@ import "src/TodoList.sol";
 
 contract TodoListTest is Test {
   TodoList public todoList;
-  // Step (1) - Define the exepcted event
+  // Step (1) - Define the expected event
    /* ... */
 
       function setUp() public {
@@ -29,10 +29,10 @@ contract TodoListTest is Test {
     // Step (3) - Specify the event data to test
     /* ... */
 
-    // Step (4) - emit the expected event
+    // Step (4) - Emit the expected event
     /* ... */
 
-    // Step (5) - execute the contract function that emits the event
+    // Step (5) - Execute the contract function that emits the event
     /* ... */
    }
 }
