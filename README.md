@@ -21,3 +21,5 @@ The repo, github.com/hedera-dev/test-an-event-with-foundry, is intended to be us
 ```shell
 git clone --recurse-submodules git@github.com:hedera-dev/test-an-event-with-foundry.git
 ```
+### Completed Branch
+To skip ahead to the final state, use the completed branch. This gives you the final state with which you can compare your implementation to the completed steps of the tutorial.
