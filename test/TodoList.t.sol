@@ -7,7 +7,7 @@ import "src/TodoList.sol";
 contract TodoListTest is Test {
   TodoList public todoList;
   // Step (1) - Define the expected event
-   /* ... */
+  event CreateTodo(address indexed creator, uint256 indexed todoIndex, string description);
 
       function setUp() public {
         todoList = new TodoList();
@@ -24,15 +24,15 @@ contract TodoListTest is Test {
 
    function test_emit_createTodoEvent() public {
     // Step (2) - Get the current number of todos
-    /* ... */
+    uint256 numberOfTodosBefore = todoList.getNumberOfTodos();
     
     // Step (3) - Specify the event data to test
-    /* ... */
+    vm.expectEmit(true, true, false, true, address(todoList));
 
     // Step (4) - Emit the expected event
-    /* ... */
+    emit CreateTodo(address(this), numberOfTodosBefore + 1, 'a new todo');
 
     // Step (5) - Execute the contract function that emits the event
-    /* ... */
+    todoList.createTodo(address(this), 'a new todo');
    }
 }
